@@ -7,7 +7,7 @@ import GlobalFooter from '../components/GlobalFooter';
 import styles from './IndexLayout.less';
 
 
-const copyright = <div>Copyright <Icon type="copyright" /> 2017 北京邮电大学交换与智能控制中心出品</div>;
+const copyright = <div>Copyright <Icon type="copyright" /> 2018 北京邮电大学交换与智能控制中心出品</div>;
 
 class IndexLayout extends React.PureComponent {
   static childContextTypes = {
@@ -20,10 +20,10 @@ class IndexLayout extends React.PureComponent {
   getPageTitle() {
     const { getRouteData, location } = this.props;
     const { pathname } = location;
-    let title = 'NLP能力开放平台';
+    let title = '感观工厂';
     getRouteData('IndexLayout').forEach((item) => {
       if (item.path === pathname) {
-        title = `${item.name} - NLP能力开放平台`;
+        title = `${item.name} - 感观工厂`;
       }
     });
     return title;
@@ -38,10 +38,10 @@ class IndexLayout extends React.PureComponent {
             <div className={styles.header}>
               <Link to="/">
                 <img alt="" className={styles.logo} src="/logo.png" />
-                <span className={styles.title}>自然语言处理能力开放平台</span>
+                <span className={styles.title}>感&nbsp;观&nbsp;工&nbsp;厂</span>
               </Link>
             </div>
-            <div className={styles.desc}>提供分词、实体标注、词向量表示、文本分类、情感分析等多项NLP技术</div>
+            <div className={styles.desc}>人工智能能力开放平台</div>
           </div>
           {
             getRouteData('IndexLayout').map(item =>

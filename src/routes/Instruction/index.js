@@ -113,7 +113,7 @@ export default class Index extends React.PureComponent {
                 <Menu.Item key="motion-classify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;情感倾向分析</Menu.Item>
                 <Menu.Item key="category-classify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文本分类</Menu.Item>
               </Menu.ItemGroup>
-              <Menu.ItemGroup title="图像处理能力">
+              <Menu.ItemGroup title="计算机视觉能力">
                 <Menu.Item key="face-sim">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人脸相似度计算</Menu.Item>
               </Menu.ItemGroup>
             </Menu>

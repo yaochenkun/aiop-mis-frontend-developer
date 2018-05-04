@@ -57,10 +57,10 @@ class BasicLayout extends React.PureComponent {
   getPageTitle() {
     const { location, getRouteData } = this.props;
     const { pathname } = location;
-    let title = 'NLP能力开放平台';
+    let title = '感观工厂';
     getRouteData('BasicLayout').forEach((item) => {
       if (item.path === pathname) {
-        title = `${item.name} - NLP能力开放平台`;
+        title = `${item.name} - 感观工厂`;
       }
     });
     return title;
@@ -118,7 +118,7 @@ class BasicLayout extends React.PureComponent {
             <GlobalFooter
               copyright={
                 <div>
-                  Copyright <Icon type="copyright" /> 2017 北京邮电大学交换与智能控制中心出品
+                  Copyright <Icon type="copyright" /> 2018 北京邮电大学交换与智能控制中心出品
                 </div>
               }
             />

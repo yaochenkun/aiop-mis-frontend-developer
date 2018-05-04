@@ -46,27 +46,11 @@ const responseBodyData = [{
   param: 'score',
   type: 'float',
   description: '相似度得分。若人脸图像无法匹配则返回-1',
-}, {
-  param: 'faces',
-  type: 'array',
-  description: '原始人脸图像数组',
-}, {
-  param: 'face_1',
-  type: 'string',
-  description: '人脸图像1',
-}, {
-  param: 'face_2',
-  type: 'string',
-  description: '人脸图像2',
 }];
 
 // 返回示例代码
 const responseCodeData = `{
     "score": 0.92191726,
-    "faces": {
-        "face_1": "iVBORw0KGgoAAAANSUh...+sUq/j8Uf/0z6s8T6AAAAABJRU5ErkJggg==",
-        "face_2": "/9j/4AAQSkZJRgABAQE...8Nvurrd4SpGuO3gBMJO854GEzcQeVA//2Q=="
-    }
 }`;
 
 @connect(state => ({
