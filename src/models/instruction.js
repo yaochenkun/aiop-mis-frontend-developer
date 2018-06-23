@@ -5,6 +5,7 @@ export default {
   namespace: 'instruction',
 
   state: {
+    submitting: false,
     result: '',
   },
 
